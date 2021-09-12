@@ -2,33 +2,6 @@ body {
   font-family: sans-serif;
 }
 
-#page {
-  padding-top: 60px;
-}
-
-header {
-  position: fixed;
-  z-index: 999;
-  top: 0;
-  right: 0;
-  left: 0;
-  padding: 0 20px;
-  line-height: 60px;
-  color: #fff;
-  background: #000;
-}
-header h1 {
-  margin: 0;
-}
-
-#pageYOffset {
-  position: fixed;
-  right: 0;
-  padding: 10px;
-  color: #fff;
-  background: rgba(0, 0, 0, 0.3);
-}
-
 #goTop {
   position: fixed;
   z-index: 999;
