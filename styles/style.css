@@ -1,25 +1,5 @@
-@font-face {
-  font-family: "FontinRegular";
-  src: url("fonts/fontin/Fontin-Regular.otf");
-}
-
-@font-face {
-  font-family: "FontinBold";
-  src: url("fonts/fontin/Fontin-Bold.otf");
-}
-
-@font-face {
-  font-family: "FontinItalic";
-  src: url("fonts/fontin/Fontin-Italic.otf");
-}
-
-@font-face {
-  font-family: "FontinSmallCaps";
-  src: url("fonts/fontin/Fontin-SmallCaps.otf");
-}
-
 body {
-  font-family: FontinSmallCaps;
+  font-family: FontinRegular;
 }
 
 #goTop {
@@ -48,16 +28,21 @@ section {
   height: 100vh;
 }
 section h2 {
-  padding: 20px;
+  font-size: 80px;
   margin: 0;
   color: #fff;
 }
 
+section h3 {
+  font-size: 60px;
+  margin: 0;
+  color: #c9c9c9;
+}
+
 section:nth-of-type(1) {
   background: #0d3d56;
-  background-image: url("img/marcelo_perfil.jpeg");
+  background-image: url("../img/marcelo_perfil.jpeg");
   background-repeat: no-repeat;
-  /* make the image background get full width */
   background-size: cover;
   background-position: center;
 }
@@ -65,8 +50,17 @@ section:nth-of-type(1) {
 .header-content {
   display: flex;
   flex: 1;
-  justify-content: space-between;
-  background-color: #0a8db1;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+/* collide .header-content when screen mobile */
+@media screen and (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+  }
 }
 
 .header-text-content {
