@@ -1,12 +1,33 @@
+@font-face {
+  font-family: "FontinRegular";
+  src: url("fonts/fontin/Fontin-Regular.otf");
+}
+
+@font-face {
+  font-family: "FontinBold";
+  src: url("fonts/fontin/Fontin-Bold.otf");
+}
+
+@font-face {
+  font-family: "FontinItalic";
+  src: url("fonts/fontin/Fontin-Italic.otf");
+}
+
+@font-face {
+  font-family: "FontinSmallCaps";
+  src: url("fonts/fontin/Fontin-SmallCaps.otf");
+}
+
 body {
-  font-family: sans-serif;
+  font-family: FontinSmallCaps;
 }
 
 #goTop {
+  cursor: pointer;
   position: fixed;
   z-index: 999;
-  right: 0;
-  top: 50%;
+  right: 16px;
+  bottom: 0;
   transform: translateY(-50%);
   padding: 20px;
   color: #fff;
@@ -14,6 +35,9 @@ body {
   border: none;
   opacity: 0;
   transition: opacity 0.4s linear;
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
 }
 
 #goTop.is-visible {
@@ -31,6 +55,28 @@ section h2 {
 
 section:nth-of-type(1) {
   background: #0d3d56;
+  background-image: url("img/marcelo_perfil.jpeg");
+  background-repeat: no-repeat;
+  /* make the image background get full width */
+  background-size: cover;
+  background-position: center;
+}
+
+.header-content {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  background-color: #0a8db1;
+}
+
+.header-text-content {
+  display: flex;
+  flex: 1;
+}
+
+.header-image-content {
+  display: flex;
+  flex: 1;
 }
 
 section:nth-of-type(2) {
