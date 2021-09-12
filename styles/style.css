@@ -57,7 +57,7 @@ section:nth-of-type(1) {
 }
 
 /* collide .header-content when screen mobile */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .header-content {
     flex-direction: column;
   }
