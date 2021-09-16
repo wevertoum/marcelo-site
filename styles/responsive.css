@@ -1,0 +1,38 @@
+@media screen and (max-width: 1200px) {
+  .home-content {
+    flex-direction: column;
+  }
+
+  .about-content {
+    flex-direction: column;
+  }
+
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .about-content-text {
+    max-width: 85%;
+    font-size: 19px;
+  }
+
+  .image-banner {
+    height: 450px;
+    width: 450px;
+  }
+
+  .footer-divider {
+    transform: rotate(180deg);
+    height: 2px;
+    width: 350px;
+    margin: 32px 0;
+  }
+
+  .main-title-footer {
+    font-size: 30px;
+  }
+
+  .main-subtitle-footer {
+    font-size: 40px;
+  }
+}
