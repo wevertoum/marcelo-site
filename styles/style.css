@@ -24,9 +24,10 @@ body {
   opacity: 1;
 }
 
-section {
+.home-section {
   height: 100vh;
 }
+
 section h2 {
   font-size: 80px;
   margin: 0;
@@ -40,27 +41,19 @@ section h3 {
 }
 
 section:nth-of-type(1) {
-  background: #0d3d56;
   background-image: url("../img/marcelo_perfil.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.header-content {
+.home-content {
   display: flex;
   flex: 1;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   height: 100%;
-}
-
-/* collide .header-content when screen mobile */
-@media screen and (max-width: 1200px) {
-  .header-content {
-    flex-direction: column;
-  }
 }
 
 .header-text-content {
@@ -73,19 +66,63 @@ section:nth-of-type(1) {
   flex: 1;
 }
 
-.image-aporo {
+.image-banner {
   height: 400px;
   width: 400px;
+  padding-bottom: 32px;
 }
 
 section:nth-of-type(2) {
-  background: #0f5b78;
+  background: #585d63;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.about-section {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+}
+
+.about-content-text {
+  max-width: 50%;
+  font-size: 25px;
+  margin: 0;
+  color: #c9c9c9;
+}
+
+.image-aporo:hover {
+  -webkit-filter: drop-shadow(0px 0px 10px rgba(44, 46, 45, 0.5));
+  filter: drop-shadow(0px 0px 10px rgba(44, 46, 45, 0.5));
+  transform: scale(1.05);
+  transition: all 1s ease-in-out;
 }
 
 section:nth-of-type(3) {
   background: #117899;
+  height: 100vh;
 }
 
-section:nth-of-type(4) {
-  background: #1496bb;
+@media only screen and (max-width: 1200px) and (min-width: 801px) {
+  .home-content {
+    flex-direction: column;
+  }
+
+  .about-section {
+    flex-direction: column;
+  }
+
+  .about-content-text {
+    max-width: 85%;
+    font-size: 27px;
+  }
+
+  .image-banner {
+    height: 450px;
+    width: 450px;
+  }
 }
