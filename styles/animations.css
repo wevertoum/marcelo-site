@@ -19,3 +19,10 @@
     opacity: 1;
   }
 }
+
+.image-animate:hover {
+  -webkit-filter: drop-shadow(0px 0px 10px rgba(44, 46, 45, 0.5));
+  filter: drop-shadow(0px 0px 10px rgba(44, 46, 45, 0.5));
+  transform: scale(1.05);
+  transition: all 1s ease-in-out;
+}
