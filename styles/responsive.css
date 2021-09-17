@@ -1,3 +1,9 @@
+@media screen and (min-width: 2000px) {
+  .geral-text {
+    font-size: 38px;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .home-content {
     flex-direction: column;
@@ -15,9 +21,13 @@
     max-width: 85%;
   }
 
+  .image-cadeira {
+    height: 300px;
+  }
+
   .image-banner {
-    height: 450px;
-    width: 450px;
+    height: 300px;
+    width: 300px;
   }
 
   .footer-divider {
@@ -27,11 +37,137 @@
     margin: 32px 0;
   }
 
+  .main-title {
+    font-size: 40px;
+  }
+
+  .main-subtitle {
+    font-size: 36px;
+  }
+
   .main-title-footer {
     font-size: 30px;
   }
 
   .main-subtitle-footer {
-    font-size: 40px;
+    font-size: 23px;
+  }
+
+  .footer-location-iframe {
+    height: 300px;
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .geral-text {
+    font-size: 29px;
+  }
+  .footer-location-iframe {
+    height: 400px;
+    width: 400px;
+  }
+
+  .image-cadeira {
+    height: 400px;
+  }
+
+  .image-banner {
+    height: 400px;
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .geral-text {
+    font-size: 29px;
+  }
+  .footer-location-iframe {
+    height: 200px;
+    width: 200px;
+  }
+
+  .image-cadeira {
+    height: 250px;
+  }
+
+  .image-banner {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .geral-text {
+    font-size: 22px;
+  }
+
+  .footer-location-iframe {
+    height: 300px;
+    width: 300px;
+    border-radius: 16px;
+  }
+
+  .footer-divider {
+    width: 300px;
+  }
+
+  .image-cadeira {
+    height: 300px;
+  }
+
+  .image-banner {
+    height: 300px;
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .geral-text {
+    font-size: 16px;
+  }
+
+  .footer-location-iframe {
+    height: 250px;
+    width: 250px;
+    border-radius: 8px;
+  }
+
+  .footer-divider {
+    width: 200px;
+  }
+
+  .image-cadeira {
+    height: 200px;
+  }
+
+  .image-banner {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .geral-text {
+    font-size: 13px;
+  }
+
+  .footer-location-iframe {
+    height: 200px;
+    width: 200px;
+    border-radius: 4px;
+  }
+
+  .footer-divider {
+    width: 100px;
+  }
+
+  .image-cadeira {
+    height: 200px;
+  }
+
+  .image-banner {
+    height: 200px;
+    width: 200px;
   }
 }
