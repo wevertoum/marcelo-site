@@ -37,7 +37,7 @@ body {
 }
 
 section:nth-of-type(1) {
-  background-image: url("../img/marcelo_perfil.jpeg");
+  background-image: url("../assets/img/marcelo_perfil.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
